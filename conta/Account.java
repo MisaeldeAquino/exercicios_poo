@@ -34,4 +34,15 @@ public class Account {
 			// balance += amount;
 		}
 	}
+	
+	public double withdraw(double amount) {
+		// se a quantia for maior que o saldo, imprime erro.
+		if (amount > balance) {
+			System.out.println("Valor de débito excedeu o saldo da conta.");
+			return 0;
+		}
+		
+		balance = balance - amount;
+		return amount;
+	}
 }

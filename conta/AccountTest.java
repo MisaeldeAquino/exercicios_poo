@@ -13,5 +13,12 @@ public class AccountTest {
 		System.out.println("Saldo de a1: " + a1.getBalance());
 		a2.deposit(100);
 		System.out.println("Saldo de a2: " + a2.getBalance());
+		
+		double amount = a1.withdraw(100);
+		System.out.println("Saque de: " + amount);
+		System.out.println("Saldo de a1: " + a1.getBalance());
+		amount = a2.withdraw(250);
+		System.out.println("Saque de: " + amount);
+		System.out.println("Saldo de a2: " + a2.getBalance());
 	}
 }
